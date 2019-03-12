@@ -37,3 +37,9 @@ balancedBrackets("[]{}()"); //?
 balancedBrackets("[{[()]}]"); //?
 // Below should return false
 balancedBrackets("[({}}]"); //?
+console.log(balancedBrackets("{}[]()")); // should print true
+console.log(balancedBrackets("{(([]))}")); // should print true
+console.log(balancedBrackets("{ [ ] ( ) }")); // should print true
+console.log(balancedBrackets("{ [ ( ] ) }")); // should print false
+console.log(balancedBrackets("(")); // should print false
+console.log(balancedBrackets("{[}")); // should print false
